@@ -1,3 +1,4 @@
+import NavBar from '../../components/navbar/NavBar';
 import SideBar from '../../components/sidebar/SideBar';
 import './home.scss'
 
@@ -6,7 +7,8 @@ const Home = () => {
         <div className='home'>
                 <SideBar/>
                 <div className="home__container">
-                    container
+                    <NavBar/>
+                    Home-container
                 </div>
         </div>
     )
