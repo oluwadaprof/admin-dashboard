@@ -10,7 +10,7 @@ const SideBar = () => {
     return (
         <div className='sidebar'>
             <div className="top">
-                <span className="logo">tobidev</span>
+                <span className="logo">iCart-Admin</span>
             </div>
             <hr />
             <div className="center">
