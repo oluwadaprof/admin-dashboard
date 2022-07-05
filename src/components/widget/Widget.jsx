@@ -19,7 +19,7 @@ const Widget = ({ type }) => {
                 isMoney: false,
                 link: 'See all users',
                 icon: (
-                    <PersonIcon className='icon'/>
+                    <PersonIcon className='icon' style={{color: 'crimson', backgroundColor: 'rgba(255, 0,0,0.2)'}} />
                 )
             }
             break;
@@ -30,7 +30,7 @@ const Widget = ({ type }) => {
                 isMoney: false,
                 link: 'View all orders',
                 icon: (
-                    <ShoppingCartIcon className='icon' />
+                    <ShoppingCartIcon className='icon' style={{ color: 'goldenrod', backgroundColor:'rgba(218,165,32,0.2)' }} />
                 )
             }
             break;
@@ -41,7 +41,7 @@ const Widget = ({ type }) => {
                 isMoney: true,
                 link: 'View net earnings',
                 icon: (
-                    <MonetizationOnIcon className='icon' />
+                    <MonetizationOnIcon className='icon' style={{ color: 'green', backgroundColor: 'rgba(0,128,0,0.2)' }} />
                 )
             }
             break;
@@ -52,7 +52,7 @@ const Widget = ({ type }) => {
                 isMoney: true,
                 link: 'See details',
                 icon: (
-                    <AccountBalanceWalletIcon className='icon' />
+                    <AccountBalanceWalletIcon className='icon' style={{ color: 'purple', backgroundColor: 'rgba(128,0,128,0.2)' }} />
                 )
             }
             break;
