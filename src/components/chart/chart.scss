@@ -1,6 +1,14 @@
-.charts {
+.chart {
     flex: 4;
-    padding: 10px;
     color: gray;
-    background-color: rebeccapurple;
+    margin-top: 2rem;
+    padding: 10px;
+    border: 1px solid black;
+    .title {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .chart__grid {
+        stroke: rgb(228, 225, 225);
+    }
 }

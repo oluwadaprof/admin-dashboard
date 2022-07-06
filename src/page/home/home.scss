@@ -11,5 +11,15 @@
         .charts {
             padding: 5px 20px;
         }
+        .list__container {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        .list__title {
+            font-weight: 500;
+            color: gray;
+            margin-bottom: 15px;
+        }
     }
 }
