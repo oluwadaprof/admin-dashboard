@@ -14,27 +14,27 @@ const List = () => {
         {
             id: 123456,
             product: "Acer Nitro 5",
-            img: "",
+            img: "https://m.media-amazon.com/images/I/71C+OcOHBEL._AC_SL1500_.jpg",
             customer: "John Doe",
             date: "1 February",
             amount: 185,
             method: "Cash on delivery",
-            status: "Approved",
+            status: "Pending",
         },
         {
             id: 113456,
             product: "Macbook Pro 13",
-            img: "",
+            img: "https://m.media-amazon.com/images/I/710iiEQp++L._AC_SL1500_.jpg",
             customer: "John Smith",
             date: "22 March",
             amount: 485,
             method: "Online",
-            status: "Approved",
+            status: "Pending",
         },
         {
             id: 123446,
             product: "Lenovo Legion III",
-            img: "",
+            img: "https://m.media-amazon.com/images/I/813-VnIfJjL._AC_SX679_.jpg",
             customer: "Mary Mark",
             date: "15 March",
             amount: 720,
@@ -44,17 +44,17 @@ const List = () => {
         {
             id: 122456,
             product: "Asus Nitro 1",
-            img: "",
+            img: "https://m.media-amazon.com/images/I/71ODPvu-eJL._AC_SL1500_.jpg",
             customer: "Gboyega John",
             date: "1 March",
             amount: 784,
             method: "Cash on delivery",
-            status: "Approved",
+            status: "Pending",
         },
         {
             id: 124566,
             product: "Asus Rog Strix",
-            img: "",
+            img: "https://m.media-amazon.com/images/I/71C+OcOHBEL._AC_SL1500_.jpg",
             customer: "John Wick",
             date: "1 March",
             amount: 785,
@@ -85,12 +85,19 @@ const List = () => {
                             <TableCell component="th" scope="row">
                                 {row.id}
                             </TableCell>
-                            <TableCell className='table__cell'>{row.product}</TableCell>
+                            <TableCell className='table__cell'>
+                                <div className="cell__wrapper">
+                                    <img src={row.img} alt="" className='image' />
+                                    {row.product}
+                                </div>
+                            </TableCell>
                             <TableCell className='table__cell'>{row.customer}</TableCell>
                             <TableCell className='table__cell'>{row.date}</TableCell>
                             <TableCell className='table__cell'>{row.amount}</TableCell>
                             <TableCell className='table__cell'>{row.method}</TableCell>
-                            <TableCell className='table__cell'>{row.status}</TableCell>
+                            <TableCell className='table__cell'>
+                                <span className={`status ${row.status}`}>{row.status}</span>
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
