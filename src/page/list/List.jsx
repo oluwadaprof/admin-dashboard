@@ -10,7 +10,6 @@ const List = () => {
       <SideBar/>
       <div className="list__container">
         <NavBar/>
-        Motherfucker!!
         <DataTable/>
       </div>
     </div>

@@ -1,4 +1,56 @@
 .data__table {
     height: 600px;
     padding: 20px;
+    .cellImage {
+        display: flex;
+        align-items: center;
+        .cell__image {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+    .cell__status {
+        padding: 5px;
+        border-radius: 5px;
+        &.active {
+            background-color: rgba(0, 128, 0, 0.05);
+            color: green;
+        }
+        &.pending {
+            background-color: rgba(225, 217, 0, 0.05);
+            color: goldenrod;
+        }
+        &.passive {
+            background-color: rgba(225, 0, 0, 0.05);
+            color: crimson;
+        }
+    }
+    .cell__action {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        .view__button {
+            padding: 3px 6px;
+            border-radius: 5px;
+            color: white;
+            background-color: darkblue;
+            cursor: pointer;
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+        .delete__button {
+            padding: 4px 5px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgba(220, 20, 60, 0.6);
+            cursor: pointer;
+            &:hover {
+                filter: brightness(1.2);
+            }
+        }
+    }
 }
